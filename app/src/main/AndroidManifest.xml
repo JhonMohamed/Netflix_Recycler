@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Practica_ntflx"
+        tools:targetApi="31">
+        <activity
+            android:name=".NextCard.ProfileActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondCard.SeriesActivity"></activity>
+        <activity android:name=".more.MoreActivity"></activity>
+    </application>
+<!--    // recyclerView.layoutManager = LinearLayoutManager(this)-->
+<!--    // → Muestra los ítems en una sola columna vertical (como una lista normal)-->
+
+<!--    // recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)-->
+<!--    // → Muestra los ítems en una fila horizontal (como un carrusel)-->
+
+<!--    // recyclerView.layoutManager = GridLayoutManager(this, 1)-->
+<!--    // → Muestra los ítems en forma de grilla con 1 columna (puedes cambiar el número)-->
+
+<!--    // recyclerView.layoutManager = StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL)-->
+<!--    // → Muestra los ítems en columnas tipo Pinterest, se acomodan según su tamaño-->
+</manifest>
